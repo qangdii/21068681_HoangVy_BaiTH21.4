@@ -1,0 +1,50 @@
+nav {
+    background: #f9ac80;
+    color: #eee;
+    font-family: Arial, Sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #f9ac80;
+}
+
+nav ul li:hover > ul.sub-menu {
+    display: block;
+}
+
+nav ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffdbc6;
+    padding: 15px 0;
+}
+
+nav ul li ul.sub-menu li {
+    display: block;
+}
+
+nav ul li ul.sub-menu li a {
+    padding: 8px 20px;
+}
